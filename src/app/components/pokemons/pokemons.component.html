@@ -1,0 +1,14 @@
+<div class="buttons">
+  <p-button
+    (click)="goToPreviousPage()"
+    [disabled]="currentPage === 0"
+    class="p-button-success"
+    >Précédent</p-button
+  >
+  <p-button (click)="goToNextPage()" class="p-button-help">Suivant</p-button>
+</div>
+<div *ngIf="pokemon$ | async as pokemons" class="cartes">
+  <div *ngFor="let pokemon of pokemons.results" class="carte">
+    <app-pokemon [url]="pokemon.url"></app-pokemon>
+  </div>
+</div>

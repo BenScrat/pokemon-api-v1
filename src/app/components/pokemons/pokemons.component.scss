@@ -1,0 +1,24 @@
+.cartes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.carte {
+  flex-basis: 25%;
+}
+
+.banniere {
+  text-align: center;
+}
+
+.boutons {
+  text-align: center;
+
+  p-button {
+    margin: 10px;
+  }
+}

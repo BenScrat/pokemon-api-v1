@@ -1,0 +1,7 @@
+<div *ngIf="pokemon$| async as pokemon" class="card card--{{pokemon.types[0].type.name}}">
+  <p-card>
+    <img [src]="pokemon.sprites.other.dream_world.front_default" [alt]="pokemon.name">
+
+    <h1>{{pokemon.name|titlecase}}</h1>
+  </p-card>
+</div>
